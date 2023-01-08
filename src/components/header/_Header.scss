@@ -1,0 +1,19 @@
+// MIXINS
+@import '../../styles/global/mixins';
+
+// STYLES
+.header {
+  padding: 1rem 2rem;
+  &-nav {
+  }
+  &-ul {
+    @include flex(row, wrap, center, center);
+    gap: 3rem;
+  }
+  &-li {
+  }
+  &-a {
+    font-size: clamp(0.75rem, 1.25vw, 2.5rem);
+    text-transform: uppercase;
+  }
+}
