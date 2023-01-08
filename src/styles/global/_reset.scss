@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  // COLORS
+  --text-one: #ffffff;
+  --text-two: #1c2029;
+  --text-three: #717172;
+  // BACKGROUNDS
+  --background-one: #010101;
+  --background-two: #ebbbbb;
+  --background-three: #fdfdff;
+  // TYPOGRAPHY
+  --family-one: 'Oswald', sans-serif;
+}
+
+* {
+  transition: 500ms;
+
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: var(--background-one);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--text-one);
+    border-radius: 3rem;
+  }
+
+  &,
+  &::before,
+  &::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    vertical-align: baseline;
+  }
+
+  &::before,
+  &::after {
+    display: block;
+  }
+}
+
+::-moz-selection {
+  background-color: var(--text-one);
+  color: var(--background-one);
+}
+
+::selection {
+  background-color: var(--text-one);
+  color: var(--background-one);
+}
+
+#root {
+  min-height: 100vh;
+  color: var(--text-one);
+  font-size: 100%;
+  font-family: var(--family-one);
+  background-color: var(--background-one);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+a {
+  display: block;
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  color: inherit;
+  display: block;
+  font-size: inherit;
+  font-family: inherit;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+// ( OPCIONAL )
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+// ( OPCIONAL )
+@media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #ececec;
+  }
+}
