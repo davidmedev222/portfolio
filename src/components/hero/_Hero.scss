@@ -1,0 +1,52 @@
+// MIXINS
+@import '../../styles/global/mixins';
+
+// STYLES
+.hero {
+  display: grid;
+  grid-template:
+    'hero1 hero2' auto
+    / 1fr 1.25fr;
+  place-content: center;
+  min-height: 85vh;
+  padding: 1rem 2rem;
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+  }
+  &-name {
+    font-size: 7vw;
+    text-transform: uppercase;
+  }
+  &-span {
+    color: #eaff6a;
+  }
+  &-rol {
+    color: #bebebe;
+    font-size: 3vw;
+  }
+  &-btn {
+    color: var(--text-two);
+    font-size: 1.5vw;
+    background-color: #eaff6a;
+    align-self: center;
+    margin-top: 2.5rem;
+    padding: 0.75em 1.25em;
+  }
+  &-projects {
+    display: grid;
+    grid-template:
+      'img1 img2'
+      'img3 img4'
+      / 1fr 1fr;
+    gap: 0.5rem;
+  }
+  &-picture {
+    position: relative;
+
+    &:hover {
+      transform: translate(-25%, -15%) scale(1.25);
+    }
+  }
+}
