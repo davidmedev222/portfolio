@@ -1,24 +1,25 @@
-import { Link } from 'react-router-dom';
-
 const Header = () => {
   return (
     <header className="header">
       <nav className="header-nav">
         <ul className="header-ul">
           <li className="header-li">
-            <Link className="header-a" to={'#projects'}>
+            <a className="header-a" href="#projects">
               projects
-            </Link>
+            </a>
+            <span className="header-line"></span>
           </li>
           <li className="header-li">
-            <Link className="header-a" to={'#aboutme'}>
+            <a className="header-a" href="#aboutme">
               about me
-            </Link>
+            </a>
+            <span className="header-line"></span>
           </li>
           <li className="header-li">
-            <Link className="header-a" to={'#contact'}>
+            <a className="header-a" href="#contact">
               contact
-            </Link>
+            </a>
+            <span className="header-line"></span>
           </li>
         </ul>
       </nav>
