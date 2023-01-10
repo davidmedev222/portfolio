@@ -1,0 +1,17 @@
+// MIXINS
+@import '../../../styles/global/mixins';
+
+// STYLES
+.lines {
+  @include flex(column, nowrap, center, center);
+  gap: 2.5rem;
+  margin: 5rem 0;
+
+  &-line {
+    height: 1.5rem;
+    width: 25%;
+    position: static !important;
+    border-radius: 3rem;
+    background-color: #eaff6a;
+  }
+}
