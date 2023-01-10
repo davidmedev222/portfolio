@@ -8,16 +8,15 @@
     'hero1 hero2' auto
     / 1fr 1.25fr;
   place-content: center;
-  min-height: 85vh;
   padding: 1rem 2rem;
 
   &-info {
+    grid-area: hero1;
     display: flex;
     flex-direction: column;
   }
   &-name {
     font-size: 7vw;
-    text-transform: uppercase;
   }
   &-span {
     color: #eaff6a;
@@ -35,6 +34,7 @@
     padding: 0.75em 1.25em;
   }
   &-projects {
+    grid-area: hero2;
     display: grid;
     grid-template:
       'img1 img2'
@@ -44,9 +44,14 @@
   }
   &-picture {
     position: relative;
+    transition: 500ms;
 
     &:hover {
       transform: translate(-25%, -15%) scale(1.25);
+
+      .redirect-group {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      }
     }
   }
 }

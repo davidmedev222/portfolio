@@ -1,48 +1,35 @@
-import { RedirectGroup } from '../redirect/RedirectGroup';
+import { useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { GlobalContext } from '../../context/global/GlobalContext';
+import { HeroProjects } from './HeroProjects';
 
 const Hero = () => {
+  const { hero } = useContext(GlobalContext);
+
+  const heroProjects = hero.projects.map((cadaProject) => (
+    <HeroProjects key={cadaProject.id} {...cadaProject} />
+  ));
+
   return (
     <div className="hero">
+      {/* INFO */}
       <div className="hero-info">
         <h1 className="hero-name">
-          <span className="hero-span">D</span>avid <span className="hero-span">M</span>amani
+          <span className="hero-span">{hero.spanOne}</span>
+          {hero.titleOne}
+          <span className="hero-span"> {hero.spanTwo}</span>
+          {hero.titleTwo}
         </h1>
-        <h2 className="hero-rol">Front End Developer</h2>
-        <button className="hero-btn">View Projects</button>
+        <h2 className="hero-rol">{hero.rol}</h2>
+        {/* BUTTON */}
+        <a href="#projects" className="hero-btn">
+          {hero.button}
+        </a>
       </div>
+      {/* PROJECTS */}
       <div className="hero-projects">
-        <picture className="hero-picture">
-          <img
-            className="hero-img"
-            src="https://res.cloudinary.com/dos3i5jqy/image/upload/v1673128462/portfolio/project-two_pcdtoo.jpg"
-            alt="project"
-          />
-          <RedirectGroup />
-        </picture>
-        <picture className="hero-picture">
-          <img
-            className="hero-img"
-            src="https://res.cloudinary.com/dos3i5jqy/image/upload/v1673128461/portfolio/project-three_o8tbqe.jpg"
-            alt="project"
-          />
-          <RedirectGroup />
-        </picture>
-        <picture className="hero-picture">
-          <img
-            className="hero-img"
-            src="https://res.cloudinary.com/dos3i5jqy/image/upload/v1673128461/portfolio/example-four_wyld70.jpg"
-            alt="project"
-          />
-          <RedirectGroup />
-        </picture>
-        <picture className="hero-picture">
-          <img
-            className="hero-img"
-            src="https://res.cloudinary.com/dos3i5jqy/image/upload/v1673128462/portfolio/project-one_fmgww7.jpg"
-            alt="project"
-          />
-          <RedirectGroup />
-        </picture>
+        {/* COMPONENT */}
+        {heroProjects}
       </div>
     </div>
   );
