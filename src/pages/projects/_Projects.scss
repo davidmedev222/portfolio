@@ -1,0 +1,45 @@
+// MIXINS
+@import '../../styles/global/mixins';
+
+// STYLES
+.projects {
+  @include flex(column, nowrap, center, center);
+  gap: 1rem;
+  padding: 1rem 3rem;
+
+  &-title {
+    font-size: 7vw;
+  }
+  &-span {
+    color: #eaff6a;
+  }
+  &-content {
+    @include grid();
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 1rem;
+  }
+  &-art {
+    position: relative;
+
+    &:hover {
+      .redirect-group {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+        & svg {
+          width: 3.5vw;
+        }
+      }
+      .projects-picture {
+        & img {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+  &-picture {
+    overflow: hidden;
+  }
+  &-img {
+    transform: scale(1.1);
+  }
+}
