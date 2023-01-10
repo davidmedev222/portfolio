@@ -1,0 +1,16 @@
+// MIXINS
+@import '../../styles/global/mixins';
+
+// STYLES
+.contact {
+  @include flex(column, nowrap, center, center);
+  gap: 1rem;
+  padding: 1rem 3rem;
+
+  &-title {
+    font-size: 7vw;
+  }
+  &-span {
+    color: #eaff6a;
+  }
+}
