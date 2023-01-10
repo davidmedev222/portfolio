@@ -5,7 +5,7 @@
   align-items: $align;
 }
 
-@mixin grid($justify, $align) {
+@mixin grid() {
   display: grid;
   place-content: center;
 }

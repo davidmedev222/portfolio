@@ -1,21 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 :root {
+  // COMPONENTS
+  --components-one: #eaff6a;
   // COLORS
   --text-one: #ffffff;
   --text-two: #1c2029;
-  --text-three: #717172;
   // BACKGROUNDS
   --background-one: #010101;
-  --background-two: #ebbbbb;
-  --background-three: #fdfdff;
   // TYPOGRAPHY
   --family-one: 'Oswald', sans-serif;
 }
 
 * {
-  transition: 500ms;
-
   &::-webkit-scrollbar {
     width: 0.5rem;
     background-color: var(--background-one);
@@ -61,7 +58,7 @@
   background-color: var(--background-one);
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto 1fr;
 }
 
 img,
