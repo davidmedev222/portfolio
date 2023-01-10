@@ -3,15 +3,20 @@
 
 // STYLES
 .redirect-group {
+  background-color: var(--background-one);
+  background-color: #eaff6a;
+  width: 100%;
   @include flex(row, nowrap, center, center);
-  gap: 2.5rem;
+  gap: 3rem;
   position: absolute;
   bottom: 0;
-  right: 0;
-  padding: 0.75em 1.75em;
-  background-color: black;
+  left: 0;
+  padding: 0.5em 1.5em;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  transition: 1000ms;
 
   &-btn {
-    width: 3vw;
+    color: var(--background-one);
+    width: 2.5vw;
   }
 }

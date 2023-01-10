@@ -10,7 +10,7 @@ const Projects = () => {
   )); // COMPONENT
 
   return (
-    <section className="projects">
+    <section id="projects" className="projects">
       {/* TITLE */}
       <h3 className="projects-title">
         <span className="projects-span">{projects.span}</span>
