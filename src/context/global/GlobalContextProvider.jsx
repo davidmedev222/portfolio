@@ -11,35 +11,43 @@ const GlobalContextProvider = ({ children }) => {
       projects: [
         {
           id: 1,
+          alt: 'e-commerce jordan',
           image:
             'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673128462/portfolio/project-two_pcdtoo.jpg',
-          alt: 'project',
-          github: 'github',
-          site: 'https',
+          redirect: {
+            github: 'https://github.com/davidmedev222/ecommerce-jordan-react',
+            site: 'https://jordanstore.vercel.app/',
+          },
         },
         {
           id: 2,
+          alt: 'plataforma gaming',
           image:
-            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673128461/portfolio/project-three_o8tbqe.jpg',
-          alt: 'project',
-          github: 'github',
-          site: 'https',
+            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673128461/portfolio/example-four_wyld70.jpg',
+          redirect: {
+            github: 'https://github.com/No-Country/C8-73-T-RN',
+            site: 'https://e-stadium.vercel.app/',
+          },
         },
         {
           id: 3,
+          alt: 'landing page',
           image:
-            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673128461/portfolio/example-four_wyld70.jpg',
-          alt: 'project',
-          github: 'github',
-          site: 'https',
+            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673128462/portfolio/project-one_fmgww7.jpg',
+          redirect: {
+            github: 'https://github.com/davidmedev222/landing-blizt-react',
+            site: 'https://blizt.vercel.app/',
+          },
         },
         {
           id: 4,
+          alt: 'food store',
           image:
-            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673128462/portfolio/project-one_fmgww7.jpg',
-          alt: 'project',
-          github: 'github',
-          site: 'https',
+            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673395429/portfolio/project-five_kzepuv.jpg',
+          redirect: {
+            github: 'https://github.com/davidmedev222/CrismaBurger-Mamani',
+            site: 'https://davidmedev222.github.io/CrismaBurger-Mamani/',
+          },
         },
       ],
       button: 'View More',
@@ -50,66 +58,53 @@ const GlobalContextProvider = ({ children }) => {
       articles: [
         {
           id: 1,
-          alt: '',
+          alt: 'e-commerce jordan',
           image:
             'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673128462/portfolio/project-two_pcdtoo.jpg',
-          redirect: { github: 'github', site: 'site' },
+          redirect: {
+            github: 'https://github.com/davidmedev222/ecommerce-jordan-react',
+            site: 'https://jordanstore.vercel.app/',
+          },
         },
         {
           id: 2,
-          alt: '',
+          alt: 'plataforma gaming',
           image:
             'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673128461/portfolio/example-four_wyld70.jpg',
-          redirect: { github: 'github', site: 'site' },
+          redirect: {
+            github: 'https://github.com/No-Country/C8-73-T-RN',
+            site: 'https://e-stadium.vercel.app/',
+          },
         },
         {
           id: 3,
-          alt: '',
+          alt: 'landing page',
           image:
             'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673128462/portfolio/project-one_fmgww7.jpg',
-          redirect: { github: 'github', site: 'site' },
+          redirect: {
+            github: 'https://github.com/davidmedev222/landing-blizt-react',
+            site: 'https://blizt.vercel.app/',
+          },
         },
         {
           id: 4,
-          alt: '',
+          alt: 'food store',
           image:
-            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673128461/portfolio/project-three_o8tbqe.jpg',
-          redirect: { github: 'github', site: 'site' },
+            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673395429/portfolio/project-five_kzepuv.jpg',
+          redirect: {
+            github: 'https://github.com/davidmedev222/CrismaBurger-Mamani',
+            site: 'https://davidmedev222.github.io/CrismaBurger-Mamani/',
+          },
         },
         {
           id: 5,
-          alt: '',
+          alt: 'e-commerce',
           image:
-            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673128461/portfolio/project-three_o8tbqe.jpg',
-          redirect: { github: 'github', site: 'site' },
-        },
-        {
-          id: 6,
-          alt: '',
-          image:
-            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673128462/portfolio/project-one_fmgww7.jpg',
-          redirect: { github: 'github', site: 'site' },
-        },
-        {
-          id: 7,
-          alt: '',
-          image:
-            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673128461/portfolio/example-four_wyld70.jpg',
-          redirect: { github: 'github', site: 'site' },
-        },
-        {
-          id: 8,
-          alt: '',
-          image:
-            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673128462/portfolio/project-two_pcdtoo.jpg',
-          redirect: { github: 'github', site: 'site' },
-        },
-        {
-          id: 9,
-          alt: '',
-          image:
-            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673128461/portfolio/example-four_wyld70.jpg',
-          redirect: { github: 'github', site: 'site' },
+            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673395511/portfolio/project-six_nbwnre.jpg',
+          redirect: {
+            github: 'https://github.com/davidmedev222/ecommerce-sneakers',
+            site: 'https://davidmedev222.github.io/ecommerce-sneakers/',
+          },
         },
       ],
     },
