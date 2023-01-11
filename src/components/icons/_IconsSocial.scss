@@ -3,16 +3,16 @@
 // STYLES
 .icons-social {
   @include flex(row, wrap, center, center);
-  gap: 5rem;
+  gap: clamp(2.5rem, 5vw, 10rem);
 
   &-a {
-    width: 3vw;
+    width: clamp(1.5rem, 3vw, 6rem);
     position: relative;
 
     &::before {
       content: '';
-      width: 1rem;
-      height: 1rem;
+      width: clamp(1rem, 1vw, 2.5rem);
+      height: clamp(1rem, 1vw, 2.5rem);
       position: absolute;
       top: -25%;
       right: -25%;
@@ -24,8 +24,8 @@
     }
     &::after {
       content: '';
-      width: 1rem;
-      height: 1rem;
+      width: clamp(1rem, 1vw, 2.5rem);
+      height: clamp(1rem, 1vw, 2.5rem);
       bottom: -25%;
       left: -25%;
       position: absolute;

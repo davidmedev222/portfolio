@@ -4,19 +4,19 @@
 // STYLES
 .projects {
   @include flex(column, nowrap, center, center);
-  gap: 1rem;
-  padding: 1rem 3rem;
+  gap: clamp(0.5rem, 1vw, 2rem);
+  padding: clamp(0.5rem, 1vw, 2rem) clamp(1.5rem, 3vw, 6rem);
 
   &-title {
-    font-size: 7vw;
+    font-size: clamp(3.5rem, 7vw, 14rem);
   }
   &-span {
     color: var(--components-one);
   }
   &-content {
     @include grid();
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(clamp(250px, 100%, 700px), 1fr));
+    gap: clamp(0.5rem, 1vw, 2rem);
   }
   &-art {
     position: relative;
@@ -25,8 +25,8 @@
       .redirect-group {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 
-        & svg {
-          width: 3.5vw;
+        &-btn {
+          width: clamp(1.75rem, 3.5vw, 5rem);
         }
       }
       .projects-picture {

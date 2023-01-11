@@ -8,7 +8,8 @@
     'hero1 hero2' auto
     / 1fr 1.25fr;
   place-content: center;
-  padding: 1rem 2rem;
+  padding: clamp(1rem, 1vw, 2rem) clamp(2rem, 2vw, 4rem);
+  gap: clamp(1.25rem, 2.5vw, 5rem);
 
   &-info {
     grid-area: hero1;
@@ -16,21 +17,21 @@
     flex-direction: column;
   }
   &-name {
-    font-size: 7vw;
+    font-size: clamp(3.5rem, 7vw, 14rem);
   }
   &-span {
     color: #eaff6a;
   }
   &-rol {
     color: #bebebe;
-    font-size: 3vw;
+    font-size: clamp(1.5rem, 3vw, 6rem);
   }
   &-btn {
     color: var(--text-two);
-    font-size: 1.5vw;
+    font-size: clamp(1rem, 1.5vw, 3rem);
     background-color: #eaff6a;
     align-self: center;
-    margin-top: 2.5rem;
+    margin-top: clamp(1.25rem, 2.5vw, 5rem);
     padding: 0.75em 1.25em;
   }
   &-projects {
@@ -40,7 +41,7 @@
       'img1 img2'
       'img3 img4'
       / 1fr 1fr;
-    gap: 0.5rem;
+    gap: clamp(0.5rem, 0.5vw, 1rem);
   }
   &-picture {
     position: relative;
@@ -52,6 +53,20 @@
       .redirect-group {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
       }
+    }
+  }
+}
+
+// MEDIAQUERYS
+@include mediamax(796px) {
+  .hero {
+    grid-template:
+      'hero1' auto
+      'hero2' auto
+      / 1fr;
+
+    &-projects {
+      display: none;
     }
   }
 }

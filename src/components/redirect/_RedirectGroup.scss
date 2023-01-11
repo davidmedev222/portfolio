@@ -7,17 +7,17 @@
   background-color: #eaff6a;
   width: 100%;
   @include flex(row, nowrap, center, center);
-  gap: 3rem;
+  gap: clamp(1.5rem, 3vw, 6rem);
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 0.5em 1.5em;
+  padding: clamp(0.5rem, 0.5vw, 1rem) clamp(0.75rem, 1.5vw, 3rem);
   clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
   transition: 1000ms;
 
   &-btn {
     color: var(--background-one);
-    width: 2.5vw;
+    width: clamp(1.25rem, 2.5vw, 5rem);
     transition: 500ms;
   }
 }

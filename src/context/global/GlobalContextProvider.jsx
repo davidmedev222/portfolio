@@ -7,7 +7,7 @@ const GlobalContextProvider = ({ children }) => {
       titleOne: 'AVID',
       spanTwo: 'M',
       titleTwo: 'AMANI',
-      rol: 'Front End Developer',
+      rol: 'Front End Web Developer',
       projects: [
         {
           id: 1,

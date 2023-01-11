@@ -50,12 +50,17 @@
   color: var(--background-one);
 }
 
+body {
+  background-color: var(--background-one);
+  max-width: 3500px;
+  margin: 0 auto;
+}
+
 #root {
   min-height: 100vh;
   color: var(--text-one);
   font-size: 100%;
   font-family: var(--family-one);
-  background-color: var(--background-one);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
