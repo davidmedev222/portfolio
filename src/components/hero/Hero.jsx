@@ -1,5 +1,4 @@
 import { useContext } from 'react';
-import { Link } from 'react-router-dom';
 import { GlobalContext } from '../../context/global/GlobalContext';
 import { HeroProjects } from './HeroProjects';
 
