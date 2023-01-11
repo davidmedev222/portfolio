@@ -1,10 +1,10 @@
 import { RedirectGroup } from '../redirect/RedirectGroup';
 
-const HeroProjects = ({ image, alt, github, site }) => {
+const HeroProjects = ({ image, alt, redirect }) => {
   return (
     <picture className="hero-picture">
       <img className="hero-img" src={image} alt={alt} />
-      <RedirectGroup github={github} site={site} />
+      <RedirectGroup github={redirect.github} site={redirect.site} />
     </picture>
   );
 };
