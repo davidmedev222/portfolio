@@ -97,7 +97,7 @@ const GlobalContextProvider = ({ children }) => {
           },
         },
         {
-          id: 4,
+          id: 5,
           alt: 'e-commerce',
           image:
             'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673395511/portfolio/project-six_nbwnre.jpg',
@@ -107,7 +107,7 @@ const GlobalContextProvider = ({ children }) => {
           },
         },
         {
-          id: 5,
+          id: 6,
           alt: 'food store',
           image:
             'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673395429/portfolio/project-five_kzepuv.jpg',
