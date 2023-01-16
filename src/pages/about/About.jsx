@@ -5,9 +5,9 @@ import { AboutSkill } from './AboutSkill';
 const About = () => {
   const { about } = useContext(GlobalContext);
 
-  const { span1, title1, span2, title2, description1, description2, description3 } = about;
+  const { span1, title1, span2, title2, description1, description2, description3, skills } = about;
 
-  const aboutSkill = about.skills.map((e) => <AboutSkill key={e} skill={e} />);
+  const aboutSkill = skills.map((e) => <AboutSkill key={e} skill={e} />);
 
   return (
     <section id="aboutme" className="about">

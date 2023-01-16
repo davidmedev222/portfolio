@@ -3,9 +3,11 @@ import { GlobalContext } from '../../context/global/GlobalContext';
 import { ProjectsItem } from './ProjectsItem';
 
 const Projects = () => {
-  const { projects } = useContext(GlobalContext); // HELPER
+  const { projects } = useContext(GlobalContext);
 
-  const projectsItems = projects.articles.map((cadaProject) => (
+  const { span, title, articles } = projects;
+
+  const projectsItems = articles.map((cadaProject) => (
     <ProjectsItem key={cadaProject.id} {...cadaProject} />
   )); // COMPONENT
 
@@ -13,8 +15,8 @@ const Projects = () => {
     <section id="projects" className="projects">
       {/* TITLE */}
       <h3 className="projects-title">
-        <span className="projects-span">{projects.span}</span>
-        {projects.title}
+        <span className="projects-span">{span}</span>
+        {title}
       </h3>
       {/* PROJECTS */}
       <div className="projects-content">{projectsItems}</div>
