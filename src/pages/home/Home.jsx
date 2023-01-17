@@ -1,24 +1,19 @@
 import { Hero } from '../../components/hero/Hero';
 import { ParallaxLines } from '../../components/parallax/lines/ParallaxLines';
+import { Widget } from '../../components/widget/Widget';
 import { Projects, About, Contact } from '../export';
 
 const Home = () => {
   return (
     <main className="main">
-      {/* COMPONENT */}
       <Hero />
-      {/* COMPONENT */}
       <ParallaxLines />
-      {/* COMPONENT */}
       <Projects />
-      {/* COMPONENT */}
       <ParallaxLines />
-      {/* COMPONENT */}
       <About />
-      {/* COMPONENT */}
       <ParallaxLines />
-      {/* COMPONENT */}
       <Contact />
+      <Widget />
     </main>
   );
 };
