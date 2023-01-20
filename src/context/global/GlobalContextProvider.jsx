@@ -124,10 +124,11 @@ const GlobalContextProvider = ({ children }) => {
       span2: 'M',
       title2: 'E',
       description1:
-        'I am a Web Developer with MERN stack management, in simple words I am a competitive person.',
+        'I am a Web Developer with MERN stack and I specialize specifically in Fron End Development with React.',
       description2:
-        'I like learning and based on that make use of my knowledge to solve any kind of problem in the best possible way.',
-      description3: 'Currently, I am a freelancer and I create content on Tiktok and Youtube.',
+        'I am a competitive person, I like to learn and based on that make use of my knowledge to solve any kind of problem in the best possible way.',
+      description3:
+        'I am currently working on freelance projects, learning new technologies and open to any kind of work proposal.',
       skills: [
         'ReactJs',
         'Javascript',
