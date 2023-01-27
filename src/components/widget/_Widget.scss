@@ -11,14 +11,15 @@
 
   &-nav {
     @include flex(column, nowrap, center, center);
-    height: 0;
-    overflow: hidden;
-    transition: 300ms ease-in-out;
     opacity: 0;
+    pointer-events: none;
+    transform: translateY(75%);
+    transition: 300ms ease-in-out;
 
     &-active {
-      height: 35vh;
       opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
     }
   }
   &-ul {
@@ -27,7 +28,7 @@
   }
   &-a {
     font-size: clamp(1rem, 1.25vw, 2.5rem);
-    color: var(--text-two);
+    color: var(--components-two);
     text-transform: uppercase;
     @include flex(row, nowrap, center, center);
     gap: clamp(1rem, 1vw, 2rem);

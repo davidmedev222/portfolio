@@ -20,16 +20,16 @@
     font-size: clamp(3.5rem, 7vw, 14rem);
   }
   &-span {
-    color: #eaff6a;
+    color: var(--components-one);
   }
   &-rol {
     color: #bebebe;
     font-size: clamp(1.5rem, 3vw, 6rem);
   }
   &-btn {
-    color: var(--text-two);
+    color: var(--components-two);
     font-size: clamp(1rem, 1.5vw, 3rem);
-    background-color: #eaff6a;
+    background-color: var(--components-one);
     align-self: center;
     margin-top: clamp(1.25rem, 2.5vw, 5rem);
     padding: 0.75em 1.25em;

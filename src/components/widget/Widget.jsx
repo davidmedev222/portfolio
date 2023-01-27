@@ -1,10 +1,11 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useToggle } from '../../hooks/toggle/useToggle';
+import { useTheme } from '../../hooks/theme/useTheme';
+import { Theme } from '../theme/Theme';
 
 const Widget = () => {
-  const [toggle, updateToggle] = useState(false);
+  const { toggle, handleOnToggle } = useToggle();
 
-  const handleToggle = () => updateToggle(!toggle);
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <div className="widget">
@@ -35,10 +36,16 @@ const Widget = () => {
               </svg>
             </a>
           </li>
+          <li className="widget-li">
+            <Theme theme={theme} toggleTheme={toggleTheme} />
+          </li>
         </ul>
       </nav>
       {/* BUTTON */}
-      <button onClick={handleToggle} className={`widget-btn ${toggle ? 'widget-btn-active' : ''}`}>
+      <button
+        onClick={handleOnToggle}
+        className={`widget-btn ${toggle ? 'widget-btn-active' : ''}`}
+      >
         <div className="widget-line widget-line-one"></div>
         <div className="widget-line widget-line-two"></div>
       </button>

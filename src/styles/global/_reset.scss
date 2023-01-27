@@ -1,15 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 :root {
+  // TYPOGRAPHY
+  --family-one: 'Oswald', sans-serif;
+}
+
+[data-theme='light'] {
   // COMPONENTS
-  --components-one: #eaff6a;
+  --components-one: #2a7df4;
+  --components-two: #ffffff;
+  // COLORS
+  --text-one: #1c2029;
+  --text-two: #ffffff;
+  // BACKGROUNDS
+  --background-one: #ececec;
+}
+[data-theme='dark'] {
+  // COMPONENTS
+  --components-one: #2a7df4;
+  --components-two: #ffffff;
   // COLORS
   --text-one: #ffffff;
   --text-two: #1c2029;
   // BACKGROUNDS
   --background-one: #010101;
-  // TYPOGRAPHY
-  --family-one: 'Oswald', sans-serif;
 }
 
 * {
