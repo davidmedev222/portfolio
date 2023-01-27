@@ -3,8 +3,7 @@
 
 // STYLES
 .redirect-group {
-  background-color: var(--background-one);
-  background-color: #eaff6a;
+  background-color: var(--components-one);
   width: 100%;
   @include flex(row, nowrap, center, center);
   gap: clamp(1.5rem, 3vw, 6rem);
@@ -16,7 +15,7 @@
   transition: 1000ms;
 
   &-btn {
-    color: var(--background-one);
+    color: var(--text-one);
     width: clamp(1.25rem, 2.5vw, 5rem);
     transition: 500ms;
   }
