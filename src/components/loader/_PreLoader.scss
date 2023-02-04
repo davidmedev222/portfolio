@@ -1,0 +1,16 @@
+.preloader {
+  background-color: var(--components-one);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  transition: width 500ms ease-in-out;
+
+  &-active {
+    width: 0;
+  }
+}
