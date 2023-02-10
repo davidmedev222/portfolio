@@ -13,14 +13,14 @@
      <li><a href="#technologies-used">Technologies Used</a></li>
 </ol>
 
-# **💥 DEMO**
+# **💥DEMO**
 
 [https://davidmedev.vercel.app/](https://davidmedev.vercel.app/)
 
-# **💬 ABOUT THE PROJECT**
+# **💬ABOUT THE PROJECT**
 
 Personal portfolio, where you can see featured and created projects, information about me and my social networks.
 
-# **🌐 TECHNOLOGIES USED**
+# **🌐TECHNOLOGIES USED**
 
 Use of `React` for the interface, `Sass` for the styles, `Git` for project version control.
