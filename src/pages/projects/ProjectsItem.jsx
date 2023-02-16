@@ -1,18 +1,18 @@
-import { RedirectGroup } from '../../components/redirect/RedirectGroup';
+import { RedirectGroup } from '../../components/redirect/RedirectGroup'
 
 const ProjectsItem = ({ image, alt, redirect }) => {
-  const { github, site } = redirect;
+  const { github, site } = redirect
 
   return (
-    <article className="projects-art">
+    <article className='projects-art'>
       {/* IMAGE */}
-      <picture className="projects-picture">
-        <img className="projects-img" src={image} alt={alt} />
+      <picture className='projects-picture'>
+        <img className='projects-img' src={image} alt={alt} />
       </picture>
       {/* COMPONENT */}
       <RedirectGroup github={github} site={site} />
     </article>
-  );
-};
+  )
+}
 
-export { ProjectsItem };
+export { ProjectsItem }

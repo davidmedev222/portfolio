@@ -1,4 +1,4 @@
-import { GlobalContext } from './GlobalContext';
+import { GlobalContext } from './GlobalContext'
 
 const GlobalContextProvider = ({ children }) => {
   const data = {
@@ -16,8 +16,8 @@ const GlobalContextProvider = ({ children }) => {
             'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673908260/apollonft/readme/apollonft1_jf9uic.jpg',
           redirect: {
             github: 'https://github.com/davidmedev222/landing-apollonft-react',
-            site: 'https://apollonft.vercel.app/',
-          },
+            site: 'https://apollonft.vercel.app/'
+          }
         },
         {
           id: 2,
@@ -26,8 +26,8 @@ const GlobalContextProvider = ({ children }) => {
             'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673128461/portfolio/example-four_wyld70.jpg',
           redirect: {
             github: 'https://github.com/No-Country/C8-73-T-RN',
-            site: 'https://e-stadium.vercel.app/',
-          },
+            site: 'https://e-stadium.vercel.app/'
+          }
         },
         {
           id: 3,
@@ -36,8 +36,8 @@ const GlobalContextProvider = ({ children }) => {
             'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673128462/portfolio/project-one_fmgww7.jpg',
           redirect: {
             github: 'https://github.com/davidmedev222/landing-blizt-react',
-            site: 'https://blizt.vercel.app/',
-          },
+            site: 'https://blizt.vercel.app/'
+          }
         },
         {
           id: 4,
@@ -46,11 +46,11 @@ const GlobalContextProvider = ({ children }) => {
             'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673128462/portfolio/project-two_pcdtoo.jpg',
           redirect: {
             github: 'https://github.com/davidmedev222/ecommerce-jordan-react',
-            site: 'https://jordanstore.vercel.app/',
-          },
-        },
+            site: 'https://jordanstore.vercel.app/'
+          }
+        }
       ],
-      button: 'View More',
+      button: 'View More'
     },
     projects: {
       span: 'P',
@@ -63,8 +63,8 @@ const GlobalContextProvider = ({ children }) => {
             'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673908260/apollonft/readme/apollonft1_jf9uic.jpg',
           redirect: {
             github: 'https://github.com/davidmedev222/landing-apollonft-react',
-            site: 'https://apollonft.vercel.app/',
-          },
+            site: 'https://apollonft.vercel.app/'
+          }
         },
         {
           id: 2,
@@ -73,8 +73,8 @@ const GlobalContextProvider = ({ children }) => {
             'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673128462/portfolio/project-one_fmgww7.jpg',
           redirect: {
             github: 'https://github.com/davidmedev222/landing-blizt-react',
-            site: 'https://blizt.vercel.app/',
-          },
+            site: 'https://blizt.vercel.app/'
+          }
         },
         {
           id: 3,
@@ -83,8 +83,8 @@ const GlobalContextProvider = ({ children }) => {
             'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673128462/portfolio/project-two_pcdtoo.jpg',
           redirect: {
             github: 'https://github.com/davidmedev222/ecommerce-jordan-react',
-            site: 'https://jordanstore.vercel.app/',
-          },
+            site: 'https://jordanstore.vercel.app/'
+          }
         },
         {
           id: 4,
@@ -93,8 +93,8 @@ const GlobalContextProvider = ({ children }) => {
             'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673128461/portfolio/example-four_wyld70.jpg',
           redirect: {
             github: 'https://github.com/No-Country/C8-73-T-RN',
-            site: 'https://e-stadium.vercel.app/',
-          },
+            site: 'https://e-stadium.vercel.app/'
+          }
         },
         {
           id: 5,
@@ -103,8 +103,8 @@ const GlobalContextProvider = ({ children }) => {
             'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673395511/portfolio/project-six_nbwnre.jpg',
           redirect: {
             github: 'https://github.com/davidmedev222/ecommerce-sneakers',
-            site: 'https://davidmedev222.github.io/ecommerce-sneakers/',
-          },
+            site: 'https://davidmedev222.github.io/ecommerce-sneakers/'
+          }
         },
         {
           id: 6,
@@ -113,10 +113,10 @@ const GlobalContextProvider = ({ children }) => {
             'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673395429/portfolio/project-five_kzepuv.jpg',
           redirect: {
             github: 'https://github.com/davidmedev222/CrismaBurger-Mamani',
-            site: 'https://davidmedev222.github.io/CrismaBurger-Mamani/',
-          },
-        },
-      ],
+            site: 'https://davidmedev222.github.io/CrismaBurger-Mamani/'
+          }
+        }
+      ]
     },
     about: {
       span1: 'A',
@@ -141,15 +141,15 @@ const GlobalContextProvider = ({ children }) => {
         'HTML5',
         'Firebase',
         'Git',
-        'Github',
-      ],
+        'Github'
+      ]
     },
     contact: {
       span: 'C',
-      title: 'ONTACT',
-    },
-  };
-  return <GlobalContext.Provider value={data}>{children}</GlobalContext.Provider>;
-};
+      title: 'ONTACT'
+    }
+  }
+  return <GlobalContext.Provider value={data}>{children}</GlobalContext.Provider>
+}
 
-export { GlobalContextProvider };
+export { GlobalContextProvider }
